@@ -1,0 +1,25 @@
+{
+  "name": "aqa_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewnovikaujs/aqa_playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewnovikaujs/aqa_playwright/issues"
+  },
+  "homepage": "https://github.com/andrewnovikaujs/aqa_playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.7.0"
+  }
+}
