@@ -30,8 +30,8 @@ test.describe("[UI] [tests] e2e", () => {
     await page.locator("#emailinput").fill(emailAddress);
     await page.locator("#passwordinput").fill(password);
     await page.getByRole("button", { name: "Login" }).click();
-    await expect(spinnerSelector.nth(1)).toBeHidden();
-    await expect(spinnerSelector.nth(2)).toBeHidden();
+    await expect(page.getByRole("heading", { name: "Welcome to Sales Management Portal" })).toBeVisible();
+    await expect(spinnerSelector).toHaveCount(0);
     await expect(page.getByRole("link", { name: "Anatoly" })).toBeVisible();
     await expect(page.locator("#sidebar")).toHaveScreenshot("sidebar-after-login.png");
    });
